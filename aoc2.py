@@ -1,6 +1,3 @@
-safe = 0
-
-
 def gen_perm(list):
     list_list = []
     for y in range(len(list)):
@@ -26,22 +23,27 @@ def check_safe(to_check_report):
     if inc == len(to_check_report) - 1:
         return True
 
-
+safe = 0
+safe_d1 = 0
 with open('in2.txt') as file:
     for x in file:
         x = x.strip()
         report = x.split()
         opt_rem = gen_perm(report)
         safe_rep = 0
+
         for check_rep in opt_rem:
             if check_safe(check_rep):
                 safe_rep = safe_rep + 1
         full_check = check_safe(report)
         if safe_rep > 0 or full_check:
             safe = safe +1
+        if(check_safe(report)):
+            safe_d1 = safe_d1 + 1
 
 
-print(safe)
+print("Deel 1: "+str(safe_d1))
+print("Deel 2: "+str(safe))
 
 
 

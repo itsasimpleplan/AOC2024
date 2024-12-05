@@ -13,13 +13,11 @@ sum = 0
 for i in instructions:
     sum = sum + (i[0]*i[1])
 
-print(sum)
+print("Deel 1: "+str(sum))
 
 x1 = re.findall("mul\(\d{1,3},\d{1,3}\)", txt)
 x2 = re.split("mul\(\d{1,3},\d{1,3}\)", txt2)
 
-print(x1)
-print(x2)
 
 valid = []
 val = True
@@ -38,12 +36,10 @@ for x in range(len(x2) - 1):
             val = True
             valid.append(x1[x])
 
-
-print(valid)
-
 instructions = [ast.literal_eval(sub[3:]) for sub in valid]
 sum = 0
 for i in instructions:
     sum = sum + (i[0]*i[1])
 
-print(sum)
+
+print("Deel 2: "+str(sum))

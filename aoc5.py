@@ -44,7 +44,7 @@ for x in to_check:
         failed_updates.append(x)
         reli_rules.append(rel_rules(x))
         idxs.append(idx)
-
+print("Deel 1: " + str(sum_middle))
 
 
 sum_middle = 0
@@ -60,5 +60,5 @@ for x in range(len((failed_updates))):
         if(check):
             sum_middle = sum_middle + int(failed_updates[x][int((len(failed_updates[x]) - 1) / 2)])
 
-print(sum_middle)
+print("Deel 2: " + str(sum_middle))
 

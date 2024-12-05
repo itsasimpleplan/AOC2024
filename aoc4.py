@@ -106,7 +106,7 @@ for row in range(len(word_search)):
             if (search_right_bottom(row, col)):
                 count = count + 1
 
-print(count)
+print("Deel 1: "+str(count))
 
 
 # --------------------- DEEL 2 ------------------------------ #
@@ -168,7 +168,7 @@ for row in range(len(word_search)):
             if (search_right_bottom(row, col)):
                 count = count + 1
 
-print(count)
+print("Deel 2: "+str(count))
 
 
 
