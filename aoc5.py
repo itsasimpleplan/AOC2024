@@ -1,7 +1,3 @@
-import itertools
-import time
-
-start = (round(time.time() * 1000))
 with open('in51.txt') as file:
     to_check = []
     for x in file:
@@ -63,7 +59,6 @@ for x in range(len((failed_updates))):
         check, idx = check_list_rec(failed_updates[x], reli_rules[x])
         if(check):
             sum_middle = sum_middle + int(failed_updates[x][int((len(failed_updates[x]) - 1) / 2)])
-now = round(time.time() * 1000)
-print(now-start)
+
 print(sum_middle)
 
