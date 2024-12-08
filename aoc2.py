@@ -25,7 +25,7 @@ def check_safe(to_check_report):
 
 safe = 0
 safe_d1 = 0
-with open('in2.txt') as file:
+with open('inputs/in2.txt') as file:
     for x in file:
         x = x.strip()
         report = x.split()

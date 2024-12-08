@@ -2,7 +2,7 @@ import ast
 import re
 
 
-with open('in3.txt') as file:
+with open('inputs/in3.txt') as file:
     for x in file:
         txt=x
         txt2= x

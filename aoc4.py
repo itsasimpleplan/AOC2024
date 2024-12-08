@@ -71,7 +71,7 @@ def search_right_top(row, col):
 
 
 
-with open('in4.txt') as file:
+with open('inputs/in4.txt') as file:
     word_search = []
     for x in file:
         x = x.strip()

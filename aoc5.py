@@ -1,4 +1,4 @@
-with open('in51.txt') as file:
+with open('inputs/in51.txt') as file:
     to_check = []
     for x in file:
         line = []
@@ -6,7 +6,7 @@ with open('in51.txt') as file:
         line = x.split(",")
         to_check.append(line)
 
-with open('in52.txt') as file:
+with open('inputs/in52.txt') as file:
     rules = []
     for x in file:
         x = x.strip()

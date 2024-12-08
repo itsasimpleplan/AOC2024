@@ -1,6 +1,6 @@
 import itertools
 
-with open('in8.txt') as file:
+with open('inputs/in8.txt') as file:
     area = []
     for x in file:
         x = x.strip()

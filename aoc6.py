@@ -7,7 +7,7 @@ RIGHT = [0,1]
 
 
 clockwise = [UP, RIGHT, DOWN, LEFT]
-with open('in6.txt') as file:
+with open('inputs/in6.txt') as file:
     area = []
     for x in file:
         x = x.strip()

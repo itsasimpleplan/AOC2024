@@ -1,4 +1,4 @@
-with open('in7.txt') as file:
+with open('inputs/in7.txt') as file:
     result = []
     numbers = []
     for x in file:

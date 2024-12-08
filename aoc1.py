@@ -1,6 +1,6 @@
 l1 = []
 l2 = []
-with open('in1.txt') as file:
+with open('inputs/in1.txt') as file:
     for x in file:
         x = x.strip()
         x = x.split(" ")
@@ -19,7 +19,7 @@ while l1 != []:
 
 print("Deel 1: "+str(sum(diff)))
 
-with open('in1.txt') as file:
+with open('inputs/in1.txt') as file:
     for x in file:
         x = x.strip()
         x = x.split(" ")
