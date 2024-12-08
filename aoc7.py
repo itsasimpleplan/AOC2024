@@ -8,8 +8,6 @@ with open('in7.txt') as file:
         list_num = [int(item) for item in list_num]
         numbers.append(list_num)
 
-operators = ["*", "+"]
-
 count = 0
 
 for n in range(len(numbers)):
@@ -29,7 +27,7 @@ for n in range(len(numbers)):
     if int(result[n]) in options:
         count = count + int(result[n])
 
-print(count)
+print("Deel 2: " + str(count))
 
 
 
