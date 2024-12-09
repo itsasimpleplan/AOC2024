@@ -30,5 +30,5 @@ sum = 0
 for x in l1:
     sum = sum + (x*l2.count(x))
 
-print("Deel 1: "+str(sum))
+print("Deel 2: "+str(sum))
 
